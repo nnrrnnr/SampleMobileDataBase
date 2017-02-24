@@ -14,3 +14,6 @@ Twitter認証してツイートを取得し、アプリ内にデータを永続�
 - [ORMA](https://github.com/gfx/Android-Orma)
 
 - [ObjectBox](http://greenrobot.org/announcement/introducing-objectbox-beta/)
+
+# Twitter4J
+`consumerKey`と`consumerSecret`を入手するため、https://apps.twitter.com/ にアクセスし、Create New App.

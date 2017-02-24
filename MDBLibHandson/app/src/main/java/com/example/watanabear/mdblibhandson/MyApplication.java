@@ -2,6 +2,8 @@ package com.example.watanabear.mdblibhandson;
 
 import android.app.Application;
 
+import io.realm.Realm;
+import io.realm.RealmConfiguration;
 import twitter4j.TwitterFactory;
 
 /**
@@ -20,5 +22,9 @@ public class MyApplication extends Application {
                 "[consumerKey]",
                 "[consumerSecret]"
         );
+
+        Realm.init(this);
+        RealmConfiguration config = new RealmConfiguration.Builder().build();
+        Realm.setDefaultConfiguration(config);
     }
 }
